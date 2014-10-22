@@ -1,28 +1,7 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+School Website is an open source Ruby on Rails project that is designed to help schools set up an easy to manage yet highly customisable website.
 
-Things you may want to cover:
+The theory behind it is many CMS systems are too complicated for school staff to be able to manage, so with School Website we want to take the complexity out of it and make it more suited to how many school websites will be configured.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+The project is just beginning, and we would love you to help with the project in any way you can.
