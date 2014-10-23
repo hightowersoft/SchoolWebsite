@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141022090552) do
+ActiveRecord::Schema.define(version: 20141023082322) do
+
+  create_table "news_items", force: true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.boolean  "featured"
+    t.boolean  "enabled"
+    t.text     "feature_image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pages", force: true do |t|
     t.string   "title"

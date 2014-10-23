@@ -1,4 +1,6 @@
 SchoolWebsite::Application.routes.draw do
+  resources :news_items
+
   get 'home' => 'home#index'
   resources :pages
 
