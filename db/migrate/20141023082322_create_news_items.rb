@@ -5,7 +5,7 @@ class CreateNewsItems < ActiveRecord::Migration
       t.text :body
       t.boolean :featured
       t.boolean :enabled
-      t.text :feature_image
+      t.string :feature_image
 
       t.timestamps
     end

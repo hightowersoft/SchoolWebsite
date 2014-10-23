@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20141023082322) do
     t.text     "body"
     t.boolean  "featured"
     t.boolean  "enabled"
-    t.text     "feature_image"
+    t.string   "feature_image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

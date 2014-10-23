@@ -30,38 +30,11 @@
 		</div> <!-- /row -->
 
 		<div class="row">
-			<div class="span4">
-				<div class="thumbnail">
-					<img src="<%= image_path "img1.jpg" %>" alt="Thumbnail 1">
-					<div class="caption">
-						<h3>Thumbnail Label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione labore dignissimos repellendus repudiandae. </p>
-						<p><a class="btn btn-primary" href="">Learn More</a></p>
-					</div>
+			<% @news_items.each do |news_item| %>
+				<div class="span4">
+					<%= render partial: "news_items/thumbnail", locals: {news_item: news_item} %>
 				</div>
-			</div>
-
-			<div class="span4">
-				<div class="thumbnail">
-					<img src="<%= image_path "img2.jpg" %>" alt="Thumbnail 1">
-					<div class="caption">
-						<h3>Thumbnail Label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione labore dignissimos repellendus repudiandae. </p>
-						<p><a class="btn btn-primary" href="">Learn More</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="span4">
-				<div class="thumbnail">
-					<img src="<%= image_path "img3.jpg" %>" alt="Thumbnail 1">
-					<div class="caption">
-						<h3>Thumbnail Label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione labore dignissimos repellendus repudiandae. </p>
-						<p><a class="btn btn-primary" href="">Learn More</a></p>
-					</div>
-				</div>
-			</div>
+			<% end %>
 		</div> <!-- /row -->
 
 		<%= render "layouts/footer" %>

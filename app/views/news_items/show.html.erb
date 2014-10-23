@@ -12,7 +12,11 @@
 
 <p>
   <strong>Featured:</strong>
-  <%= @news_item.featured %>
+  <% if @news_item.featured %>
+    <span class="tick-icon"></span>
+  <% else %>
+    <span class="cross-icon"></span>
+  <% end %>
 </p>
 
 <p>

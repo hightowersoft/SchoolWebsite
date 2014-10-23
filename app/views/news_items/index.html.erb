@@ -1,4 +1,4 @@
-<h1>Listing news_items</h1>
+<h1>All News Items</h1>
 
 <table>
   <thead>
@@ -19,8 +19,12 @@
       <tr>
         <td><%= news_item.title %></td>
         <td><%= news_item.body %></td>
-        <td><%= news_item.featured %></td>
-        <td><%= news_item.enabled %></td>
+        <td>
+          <%= image_tag "icons/#{news_item.featured? ? 'tick' : 'cross'}.png" %>
+        </td>
+        <td>
+          <%= image_tag "icons/#{news_item.enabled? ? 'tick' : 'cross'}.png" %>
+        </td>
         <td><%= news_item.feature_image %></td>
         <td><%= link_to 'Show', news_item %></td>
         <td><%= link_to 'Edit', edit_news_item_path(news_item) %></td>
