@@ -1,33 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
+<h1>
   <%= @news_item.title %>
-</p>
+</h1>
 
 <p>
-  <strong>Body:</strong>
-  <%= @news_item.body %>
+  <%= @news_item.body.html_safe %>
 </p>
 
-<p>
-  <strong>Featured:</strong>
-  <% if @news_item.featured %>
-    <span class="tick-icon"></span>
-  <% else %>
-    <span class="cross-icon"></span>
-  <% end %>
-</p>
-
-<p>
-  <strong>Enabled:</strong>
-  <%= @news_item.enabled %>
-</p>
-
-<p>
-  <strong>Feature image:</strong>
-  <%= @news_item.feature_image %>
-</p>
-
+<hr />
 <%= link_to 'Edit', edit_news_item_path(@news_item) %> |
 <%= link_to 'Back', news_items_path %>

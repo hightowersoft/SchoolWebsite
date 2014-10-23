@@ -31,7 +31,7 @@
     </label>
   </div>
   <div class="field">
-    <%= f.label :enabled %>
+    <%= f.label :enabled? %>
     <label class="checkbox toggle candy" onclick="">
       <%= f.check_box :enabled %>
       <p>
@@ -42,8 +42,9 @@
     </label>
   </div>
   <div class="field">
-    <%= f.label :image %>
-    <%= f.file_field :image %>
+    <%= f.label :feature_image %>
+    <%= f.file_field :image, class: "btn btn-info" %>
+    <br /><i>Please choose an image if this item is to be shown on the front page.</i>
   </div>
   <div class="actions">
     <%= f.submit class: "btn btn-success" %>

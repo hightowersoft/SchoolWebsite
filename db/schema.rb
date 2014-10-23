@@ -11,14 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141023092407) do
+ActiveRecord::Schema.define(version: 20141023100803) do
 
   create_table "news_items", force: true do |t|
     t.string   "title"
     t.text     "body"
     t.boolean  "featured"
     t.boolean  "enabled"
-    t.string   "feature_image"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
