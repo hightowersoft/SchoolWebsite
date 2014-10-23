@@ -12,6 +12,43 @@
  *= require_tree .
  */
 
+.center {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px dashed #bbb;
+
+  tr {
+    th, td {
+      padding: 5px;
+    }
+
+    th {
+      text-align: left;
+      font-size: 1.1em;
+    }
+  }
+  .center {
+    text-align: center;
+  }
+
+  .h {
+    background-color: #3399cc;
+    color: white;
+  }
+
+  .one {
+    background-color: #ddd;
+  }
+
+  .two {
+    background-color: #eee;
+  }
+}
+
 #footer {
 	font-style: italic;
 	text-align: center;
