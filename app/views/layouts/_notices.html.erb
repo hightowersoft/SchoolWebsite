@@ -1,0 +1,23 @@
+<!-- Notices/Warnings -->
+<% if notice %>
+	<div class="row center">
+		<div class="span12">
+			<div class="alert alert-success">
+			  <button type="button" class="close" data-dismiss="alert">&times;</button>
+			  <%= notice %>
+			</div>
+		</div>
+	</div> <!-- /row -->
+	<% end %>
+
+	<% if alert %>
+	<div class="row center">
+		<div class="span12">
+			<div class="alert alert-error">
+			  <button type="button" class="close" data-dismiss="alert">&times;</button>
+			  <%= alert %>
+			</div>
+		</div>
+	</div> <!-- /row -->
+<% end %>
+<!-- End of notices/warnings -->

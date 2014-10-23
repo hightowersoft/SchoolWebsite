@@ -17,24 +17,26 @@
   </div>
   <div class="field">
     <%= f.label :body %>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, rows: 10 %>
   </div>
   <div class="field">
+    <%= f.label :home %>
     <label class="checkbox toggle candy" onclick="">
       <%= f.check_box :home %>
       <p>
-        <span>Home</span>
-        <span>&nbsp;</span>
+        <span>Yes</span>
+        <span>No</span>
       </p>
       <a class="slide-button"></a>
     </label>
   </div>
   <div class="field">
+    <%= f.label :enabled? %>
     <label class="checkbox toggle candy" onclick="">
       <%= f.check_box :enabled %>
       <p>
-        <span>Enable</span>
-        <span>&nbsp;</span>
+        <span>Yes</span>
+        <span>No</span>
       </p>
       <a class="slide-button"></a>
     </label>
