@@ -12,22 +12,34 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :body %><br>
+    <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
   <div class="field">
-    <%= f.label :home %><br>
-    <%= f.check_box :home %>
+    <label class="checkbox toggle candy" onclick="">
+      <%= f.check_box :home %>
+      <p>
+        <span>Home</span>
+        <span>&nbsp;</span>
+      </p>
+      <a class="slide-button"></a>
+    </label>
   </div>
   <div class="field">
-    <%= f.label :enabled %><br>
-    <%= f.check_box :enabled %>
+    <label class="checkbox toggle candy" onclick="">
+      <%= f.check_box :enabled %>
+      <p>
+        <span>Enable</span>
+        <span>&nbsp;</span>
+      </p>
+      <a class="slide-button"></a>
+    </label>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-success" %>
   </div>
 <% end %>

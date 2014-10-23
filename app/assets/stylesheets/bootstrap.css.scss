@@ -1092,6 +1092,7 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: 20px;
+  width: 95%;
   padding: 4px 6px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -1106,7 +1107,7 @@ input[type="color"],
 input,
 textarea,
 .uneditable-input {
-  width: 206px;
+  /*width: 206px;*/
 }
 
 textarea {
@@ -4514,6 +4515,7 @@ input[type="submit"].btn.btn-mini {
   float: left;
   margin-top: 5px;
   margin-bottom: 0;
+  margin-right: 10px;
 }
 
 .navbar-search .search-query {
@@ -6128,6 +6130,7 @@ a.badge:focus {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  background-image: image-url("jumbotron.png");
 }
 
 .hero-unit h1 {
