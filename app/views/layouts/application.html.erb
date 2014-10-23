@@ -15,10 +15,7 @@
 </head>
 <body>
 	<div class="container">
-		<header>
-			<img src="<%= image_path "logo.png" %>" alt="ML Bootstrap Template">
-			<h1>School Website</h1>
-		</header>
+		<%= render "layouts/header" %>
 
 		<%= render "layouts/top_menu" %>
 
@@ -39,11 +36,8 @@
 			</div>
 		</div> <!-- /row -->
 
-		<hr />
-
-		<div id="footer">
-			Copyright &copy; 2014 Hightowersoft
-		</div>
+		<%= render "layouts/footer" %>
+		
 	</div> <!-- /container -->
 </body>
 </html>
